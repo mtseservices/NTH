@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Gallery — Natural Taste Hai</title>
+<meta name="description" content="Behind the seal at Natural Taste Hai — our sourcing, crafting, quality and packaging process, with product footage." />
+<link rel="icon" href="assets/images/logo.jpg" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="gallery">
+
+<div id="chrome-header"></div>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Gallery</div>
+      <h1>From Farm to Family Table</h1>
+      <p>A glimpse into how every NTH product is sourced, crafted, and delivered — from raw ingredient to sealed jar.</p>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <span class="eyebrow">Our Process</span>
+      <h2 class="section-title reveal">Behind The Seal</h2>
+      <div class="process-grid">
+        <div class="process-card reveal"><b>01 — Sourcing</b><h4>Trusted Farms</h4><p>Fruits, vegetables &amp; spices sourced directly from growers across Punjab &amp; the north.</p></div>
+        <div class="process-card reveal"><b>02 — Crafting</b><h4>Traditional Recipes</h4><p>Time-honored family recipes, slow-cooked in small batches for authentic flavor.</p></div>
+        <div class="process-card reveal"><b>03 — Quality Lab</b><h4>Rigorous Testing</h4><p>Every batch checked in-house against HACCP &amp; ISO 22000 protocols.</p></div>
+        <div class="process-card reveal"><b>04 — Packaging</b><h4>Sealed Fresh</h4><p>Hygienically packed to preserve taste and extend shelf life naturally.</p></div>
+        <div class="process-card reveal"><b>05 — Distribution</b><h4>Nationwide Reach</h4><p>Delivered fresh to 30+ cities through our trusted distributor network.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow">Product Footage</span>
+      <h2 class="section-title reveal">See The Craft In Motion</h2>
+      <p class="section-lede reveal">A closer look at the textures and freshness behind our sauces, jams, dry fruits and spices.</p>
+      <div class="video-showcase" style="margin-top:40px;">
+        <div class="video-frame reveal">
+          <video class="showcase-video" autoplay muted loop playsinline poster="assets/images/logo.jpg">
+            <source src="assets/videos/sauce-pour.mp4" type="video/mp4" />
+          </video>
+          <div class="cap">Rich tomato sauce, ladled fresh</div>
+        </div>
+        <div class="video-frame reveal">
+          <video class="showcase-video" autoplay muted loop playsinline poster="assets/images/logo.jpg">
+            <source src="assets/videos/jam-spread.mp4" type="video/mp4" />
+          </video>
+          <div class="cap">Real fruit jam, spread thick</div>
+        </div>
+        <div class="video-frame reveal">
+          <video class="showcase-video" autoplay muted loop playsinline poster="assets/images/logo.jpg">
+            <source src="assets/videos/almonds-fall.mp4" type="video/mp4" />
+          </video>
+          <div class="cap">Handpicked almonds, naturally fresh</div>
+        </div>
+        <div class="video-frame reveal">
+          <video class="showcase-video" autoplay muted loop playsinline poster="assets/images/logo.jpg">
+            <source src="assets/videos/spices-burst.mp4" type="video/mp4" />
+          </video>
+          <div class="cap">Vibrant, stone-ground spices</div>
+        </div>
+      </div>
+      <p style="font-size:.7rem;color:var(--stone);margin-top:14px;">Placeholder stock footage shown above — replace with your own product/facility videos any time. See /assets/videos/README.txt.</p>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <span class="eyebrow">Our Story On Film</span>
+      <h2 class="section-title reveal">The Heart of Natural Taste Hai</h2>
+      <div class="video-showcase" style="margin-top:40px;">
+        <div class="video-frame reveal">
+          <video id="aboutVideo2" autoplay muted loop playsinline poster="assets/images/logo.jpg">
+            <source id="aboutVideoSrc2" src="assets/videos/about-pour.mp4" type="video/mp4" />
+          </video>
+          <div class="cap">Real fruit, real flavor — crafted the honest way</div>
+        </div>
+        <div class="video-frame reveal">
+          <video id="heroVideo2" autoplay muted loop playsinline poster="assets/images/logo.jpg">
+            <source id="heroVideoSrc2" src="assets/videos/hero-pour.mp4" type="video/mp4" />
+          </video>
+          <div class="cap">Bottled at peak freshness, every batch</div>
+        </div>
+      </div>
+      <div class="profile-actions reveal">
+        <a href="products.html" class="btn btn-gold">Browse Products</a>
+        <a href="contact.html" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="chrome-footer"></div>
+<div id="chrome-floating"></div>
+
+<script src="js/config.js"></script>
+<script src="js/products-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/assistant.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    wireVideo(document.getElementById('aboutVideo2'), document.getElementById('aboutVideoSrc2'), SITE_CONFIG.video.about);
+    wireVideo(document.getElementById('heroVideo2'), document.getElementById('heroVideoSrc2'), SITE_CONFIG.video.hero);
+  });
+</script>
+</body>
+</html>
